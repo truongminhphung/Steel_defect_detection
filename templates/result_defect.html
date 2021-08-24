@@ -1,0 +1,19 @@
+{% extends "base.html"%}
+{% block title %}Defection Result{% endblock %}
+{% block content%}
+<div class="row">
+    <div class="col-sm-4">
+        <h3 class="text-primary">Result</h3>
+        <button onclick="window.location='index';" class="btn btn-primary mb-3">Go back</button>
+    </div>
+    <div class="col-sm-2">
+
+    </div>
+    <div class="col-sm-6">
+        <img width="70%" height="80%" style="float:right" src="{{ url_for('static', filename='images/info.png') }}" alt="Info">
+    </div>
+</div>
+<div class="row">
+    <img src="{{ img_url }}" alt="">
+</div>
+{% endblock %}

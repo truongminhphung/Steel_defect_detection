@@ -1,0 +1,5 @@
+Flask
+torch
+opencv-python
+albumentations
+segmentation-models-pytorch

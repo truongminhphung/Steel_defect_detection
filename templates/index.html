@@ -1,0 +1,37 @@
+{% extends "base.html"%}
+{% block title %}Home Page{% endblock %}
+{% block content %}
+<p style="font-size: 25px;" class="text-dark">Click to the specific image and submit predict button</p>
+<form action="{{ url_for('detect') }}" method="post">
+    <input type="submit" value="Detect" class="btn btn-primary mb-1">
+    <div class="row" style="text-align:center;">
+        <label for="img1" class="im1 mb-3">
+            <input type="radio" name="img1" id="img1" value="image3.jpg" checked="checked">
+            <img width="80%" src="{{ url_for('static', filename='images/image3.jpg') }}" alt="">
+        </label>
+
+        <label for="img2" class="im2 mb-3">
+            <input type="radio" name="img1" id="img2" value="image4.jpg">
+            <img width="80%" src="{{ url_for('static', filename='images/image4.jpg') }}" alt="">
+        </label>
+
+        <label for="img3" class="im3 mb-3">
+            <input type="radio" name="img1" id="img3" value="image5.jpg">
+            <img width="80%" src="{{ url_for('static', filename='images/image5.jpg') }}" alt="">
+        </label>
+
+        <label for="img4" class="im4 mb-3">
+            <input type="radio" name="img1" id="img4" value="image8.jpg">
+            <img width="80%" src="{{ url_for('static', filename='images/image8.jpg') }}" alt="">
+        </label>
+
+        <label for="img5" class="im5">
+            <input type="radio" name="img1" id="img5" value="image2.jpg">
+            <img width="80%" src="{{ url_for('static', filename='images/image2.jpg') }}" alt="">
+        </label>
+    </div>
+    <br>
+</form>
+
+
+{% endblock %}

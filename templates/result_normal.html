@@ -1,0 +1,7 @@
+{% extends "base.html"%}
+{% block title %}Normal Steel{% endblock %}
+{% block content%}
+<h2 class="text-primary">Result: <strong style="color:red;">The Steel is normal</strong></h2>
+<button onclick="window.location='index';" class="btn btn-primary mb-3">Go back</button>
+<img src="{{ url_for('static', filename=img_url) }}" alt="">
+{% endblock %}
